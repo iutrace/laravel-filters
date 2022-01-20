@@ -1,6 +1,6 @@
 <?php
 
-namespace Iutrace\LaravelFilters\Traits;
+namespace Iutrace\LaravelFilters;
 
 use Illuminate\Support\Arr;
 
