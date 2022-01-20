@@ -1,20 +1,14 @@
 {
-  "name": "iutrace/laravel-cuit-validator",
-  "description": "Argentinian CUIT and CUIL Validator",
+  "name": "iutrace/laravel-filters",
+  "description": "Simple filters for laravel",
   "type": "library",
   "keywords": [
     "iutrace",
-    "argentina",
     "laravel",
-    "cuit",
-    "cuil",
-    "afip",
-    "anses",
-    "validator",
-    "validation",
-    "rules"
+    "filter",
+    "filters"
   ],
-  "homepage": "https://github.com/iutrace/laravel-cuit-validator",
+  "homepage": "https://github.com/iutrace/laravel-filters",
   "license": "MIT",
   "authors": [
     {
@@ -33,7 +27,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Iutrace\\Validation\\": "src/"
+      "Iutrace\\LaravelFilters\\": "src/"
     },
     "exclude-from-classmap": [
       "/tests/"
@@ -41,18 +35,11 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Iutrace\\Validation\\Tests\\": "tests/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Iutrace\\Validation\\CuitValidatorProvider"
-      ]
+      "Tests\\": "tests/"
     }
   },
   "scripts": {
-    "test": "vendor/bin/phpunit",
+    "test": "vendor/bin/phpunit --testdox",
     "test-coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html coverage",
     "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
   },
