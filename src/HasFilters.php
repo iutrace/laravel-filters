@@ -82,12 +82,15 @@ trait HasFilters
         switch ($operation) {
             case 'in':
                 $query->whereIn($field, $value);
+
                 break;
             case '!in':
                 $query->whereNotIn($field, $value);
+
                 break;
             default:
                 $query->where($field, $operation, $value);
+
                 break;
         }
     }
