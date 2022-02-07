@@ -88,6 +88,9 @@ trait HasFilters
                 $query->whereNotIn($field, $value);
 
                 break;
+            case 'like':
+                $query->where($field, $operation, '%'.$value.'%');
+                break;
             default:
                 $query->where($field, $operation, $value);
 
