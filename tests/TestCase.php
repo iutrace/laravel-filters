@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace Iutrace\LaravelFilters\Tests;
 
 use Illuminate\Filesystem\FilesystemServiceProvider;
 use Illuminate\Translation\TranslationServiceProvider;
