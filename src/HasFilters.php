@@ -90,7 +90,7 @@ trait HasFilters
                 break;
             case 'like':
                 $query->where($field, $operation, '%'.$value.'%');
-                
+
                 break;
             case 'orderBy':
                 $query->orderBy($field, $value); //$value = 'desc', 'asc'
